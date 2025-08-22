@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKS Cincos - منصة الربح من الإعلانات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شاشة التحميل -->
+    <div class="splash-screen">
+        <div class="logo-animation">
+            <div class="logo">BKS Cincos</div>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- واجهة تسجيل الدخول -->
+    <div class="login-container active">
+        <div class="login-form">
+            <div class="app-logo">
+                <h1>BKS Cincos</h1>
+                <p>منصة الربح من الإعلانات والمهام اليومية</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="اسم المستخدم" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="الرقم السري" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-ticket-alt"></i>
+                    <input type="text" placeholder="كود الإحالة (اختياري)">
+                </div>
+                
+                <button type="submit" class="login-btn">تسجيل الدخول <i class="fas fa-arrow-left"></i></button>
+            </form>
+            
+            <div class="customer-service">
+                <p>خدمة العملاء: <a href="https://t.me/ta_ta_ta_123" target="_blank">Telegram <i class="fab fa-telegram"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- الواجهة الرئيسية -->
+    <div class="main-container">
+        <!-- الرسالة الترحيبية -->
+        <div class="welcome-modal">
+            <div class="modal-content">
+                <h2>مرحبًا بك في BKS Cincos!</h2>
+                <p>للربح من الاعلانات والمهام اليوميه</p>
+                <div class="welcome-info">
+                    <p>أسرع طريقة لكسب المال هنا هي عدم توفير المال بنفسك، ولكن لتشكيل فريق بنفسك لكسب عمولات سخية، وقيادة أعضاء الفريق لكسب المال معًا.</p>
+                    <ul>
+                        <li>إذا تجاوز إيداع واحد USDT أو أكثر، يتم إعطاء 15% من مبلغ الإيداع.</li>
+                        <li>تسجيل وإعطاء اليانصيب، مع أقصى مكافأة USDT.</li>
+                        <li>يودع أعضاء الفريق أكثر من USDT، وإعطاء يانصيب، ومكافأة 5-300 USDT، ومعدل الفوز بنسبة 100%.</li>
+                    </ul>
+                </div>
+                <button class="ok-btn">موافق</button>
+            </div>
+        </div>
+
+        <!-- الشريط العلوي -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">BKS Cincos</div>
+                <div class="user-actions">
+                    <button class="deposit-btn">ايداع <i class="fas fa-coins"></i></button>
+                    <button class="withdraw-btn">سحب <i class="fas fa-wallet"></i></button>
+                    <div class="user-info">
+                        <span class="user-name">مستخدم جديد</span>
+                        <span class="user-balance">0.00 $</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- البنر المتحرك -->
+        <div class="banner-container">
+            <div class="animated-banner">
+                <div class="banner-content">
+                    <i class="fas fa-gift"></i>
+                    <span>تم سحب <span class="amount">12</span>$ بنجاح - <span class="user-id">ID: ${generateUserId()}</span></span>
+                </div>
+                <div class="banner-content">
+                    <i class="fas fa-gift"></i>
+                    <span>تم سحب <span class="amount">61</span>$ بنجاح - <span class="user-id">ID: ${generateUserId()}</span></span>
+                </div>
+                <div class="banner-content">
+                    <i class="fas fa-gift"></i>
+                    <span>تم سحب <span class="amount">35</span>$ بنجاح - <span class="user-id">ID: ${generateUserId()}</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- محتوى الصفحة الرئيسية -->
+        <main class="main-content">
+            <!-- سيتم تحميل المحتوى هنا ديناميكيًا -->
+        </main>
+
+        <!-- شريط التنقل السفلي -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" data-target="home">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </a>
+            <a href="#" class="nav-item" data-target="vip">
+                <i class="fas fa-crown"></i>
+                <span>كبار الشخصيات</span>
+            </a>
+            <a href="#" class="nav-item" data-target="leaders">
+                <i class="fas fa-trophy"></i>
+                <span>المتصدرين</span>
+            </a>
+            <a href="#" class="nav-item" data-target="tasks">
+                <i class="fas fa-tasks"></i>
+                <span>المهام</span>
+            </a>
+            <a href="#" class="nav-item" data-target="profile">
+                <i class="fas fa-user"></i>
+                <span>حسابي</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- نافذة الإيداع -->
+    <div class="modal deposit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>الإيداع</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="subscription-info" id="subscriptionInfo">
+                    <h3>اشتراك في <span id="selectedPlan">VIP 1</span></h3>
+                    <p>المبلغ المطلوب: <span id="planPrice">5</span>$</p>
+                    <p>سيتم التحقق من عملية الإيداع عبر IP الموقع</p>
+                </div>
+                
+                <div class="deposit-options">
+                    <div class="option">
+                        <h3><i class="fab fa-usdt"></i> USDT (TRC20)</h3>
+                        <div class="address-box">
+                            <p>TLsGeELYfexmuhK6g3TVQ44AAt5kxZN3gb</p>
+                            <button class="copy-btn" data-address="TLsGeELYfexmuhK6g3TVQ44AAt5kxZN3gb">
+                                <i class="fas fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="option">
+                        <h3><i class="fab fa-btc"></i> BTC (Segwit)</h3>
+                        <div class="address-box">
+                            <p>bc1qlvx4tzwzvm66p0ukfykkv4zsqq7ywug65282u2</p>
+                            <button class="copy-btn" data-address="bc1qlvx4tzwzvm66p0ukfykkv4zsqq7ywug65282u2">
+                                <i class="fas fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="option">
+                        <h3><i class="fab fa-ethereum"></i> BNB (BEP20)</h3>
+                        <div class="address-box">
+                            <p>0x83c317eab7f9d70cf1f98ca8cd30fce09d7fe18e</p>
+                            <button class="copy-btn" data-address="0x83c317eab7f9d70cf1f98ca8cd30fce09d7fe18e">
+                                <i class="fas fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="option">
+                        <h3><i class="fab fa-ethereum"></i> ETH (ERC20)</h3>
+                        <div class="address-box">
+                            <p>0x83c317eab7f9d70cf1f98ca8cd30fce09d7fe18e</p>
+                            <button class="copy-btn" data-address="0x83c317eab7f9d70cf1f98ca8cd30fce09d7fe18e">
+                                <i class="fas fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deposit-instructions">
+                    <h3>طريقة الإيداع:</h3>
+                    <p>1. اختر العملة المرغوبة</p>
+                    <p>2. انسخ عنوان المحفظة</p>
+                    <p>3. قم بالإيداع من خلال محفظتك</p>
+                    <p>4. سيتم تفعيل رصيدك خلال 10 دقائق</p>
+                    <p>5. تأكد من استخدام نفس IP الموقع للتحقق</p>
+                    <p>للدفع بالعملات المحلية، تواصل مع الوكيل</p>
+                </div>
+                
+                <button class="confirm-deposit">تأكيد الإيداع</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة السحب -->
+    <div class="modal withdraw-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>السحب</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="withdraw-amount">
+                    <h3>المبلغ المطلوب سحبه</h3>
+                    <div class="amount-input">
+                        <input type="number" placeholder="5$ الحد الأدنى" min="5" step="0.01">
+                        <span>USD</span>
+                    </div>
+                    <p class="min-amount">الحد الأدنى للسحب: 5$</p>
+                </div>
+
+                <div class="withdraw-options">
+                    <div class="withdraw-category">
+                        <h3>العملات الرقمية</h3>
+                        <div class="options-grid">
+                            <div class="option" data-method="bitcoin"><i class="fab fa-bitcoin"></i> Bitcoin</div>
+                            <div class="option" data-method="ethereum"><i class="fab fa-ethereum"></i> Ethereum</div>
+                            <div class="option" data-method="usdt"><i class="fab fa-usdt"></i> Tether</div>
+                            <div class="option" data-method="bnb"><i class="fab fa-ethereum"></i> Binance Coin</div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdraw-category">
+                        <h3>البطاقات</h3>
+                        <div class="options-grid">
+                            <div class="option" data-method="visa"><i class="fab fa-cc-visa"></i> Visa</div>
+                            <div class="option" data-method="mastercard"><i class="fab fa-cc-mastercard"></i> MasterCard</div>
+                            <div class="option" data-method="amex"><i class="fab fa-cc-amex"></i> American Express</div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdraw-category">
+                        <h3>محافظ إلكترونية</h3>
+                        <div class="options-grid">
+                            <div class="option" data-method="paypal"><i class="fab fa-paypal"></i> PayPal</div>
+                            <div class="option" data-method="skrill"><i class="fas fa-wallet"></i> Skrill</div>
+                            <div class="option" data-method="neteller"><i class="fas fa-money-bill"></i> Neteller</div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdraw-category">
+                        <h3>طرق أخرى</h3>
+                        <div class="options-grid">
+                            <div class="option" data-method="bank"><i class="fas fa-money-bill-wave"></i> حوالة بنكية</div>
+                            <div class="option" data-method="mobile"><i class="fas fa-mobile-alt"></i> محافظ متنقلة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات السحب -->
+                <div class="withdraw-info" id="withdrawInfo">
+                    <h3>معلومات السحب</h3>
+                    <p>اختر طريقة السحب لرؤية التفاصيل</p>
+                </div>
+
+                <button class="confirm-withdraw">طلب السحب</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة التأكيد على الاشتراك -->
+    <div class="modal confirm-subscription-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تأكيد الاشتراك</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="subscription-animation">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>تم طلب اشتراكك بنجاح!</h3>
+                    <p>سيتم تفعيل اشتراكك في <span class="plan-name">VIP 1</span> بعد تأكيد الإيداع</p>
+                    <p>مدة التفعيل: 10 دقائق كحد أقصى</p>
+                </div>
+                <button class="view-deposit">الانتقال إلى صفحة الإيداع</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة تأكيد السحب -->
+    <div class="modal confirm-withdraw-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تأكيد السحب</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="withdraw-details">
+                    <div class="detail-item">
+                        <span>المبلغ:</span>
+                        <span id="withdraw-amount">0.00$</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>طريقة السحب:</span>
+                        <span id="withdraw-method">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>العمولة:</span>
+                        <span id="withdraw-fee">0.00$</span>
+                    </div>
+                    <div class="detail-item total">
+                        <span>المبلغ الإجمالي:</span>
+                        <span id="withdraw-total">0.00$</span>
+                    </div>
+                </div>
+                
+                <div class="address-input">
+                    <h3>عنوان المحفظة</h3>
+                    <input type="text" placeholder="أدخل عنوان محفظتك">
+                </div>
+                
+                <button class="confirm-withdraw-final">تأكيد السحب</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة تأكيد الإيداع -->
+    <div class="modal confirm-deposit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تأكيد الإيداع</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="deposit-confirmation">
+                    <i class="fas fa-clock"></i>
+                    <h3>جاري التحقق من الدفع</h3>
+                    <p>سيتم التحقق من عملية الإيداع خلال دقائق قليلة</p>
+                    <p>سيصلك إشعار عند اكتمال العملية</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
